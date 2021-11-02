@@ -1,0 +1,513 @@
+/*主要是字体和颜色的设置，有一些属性没有用到，最终版用不到就会删除*/
+body {
+	margin: 0;
+	--color-frame-bg: #c9644b;
+	--color-bg: white;
+    --color-link: #7e0e0e;
+    --color-link-hover: #fff;
+    --color-menu: #3a1911;
+    --color-menu-hover: #ffffff;
+    --color-menu-deco: #9c0e0e;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    --cursor-stroke: none;
+    --cursor-fill: #6b3f24;
+    --cursor-stroke-width: 1px;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*首页导航*/
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+	cursor: pointer;
+}
+
+ a:hover,
+ a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.top {
+	position: relative;
+	padding: 1rem 1.5rem;
+	width: 100%;
+	display: flex;
+	text-transform: uppercase;
+	z-index: 1000;
+	background: var(--color-frame-bg);
+}
+.top__title {
+
+	font-size: 1rem;
+	margin: 0;
+	font-weight: 400;
+}
+
+/*每一个选项*/
+.frame__demos a {
+    top: 0.5rem;
+	border-bottom: 1px solid currentColor;
+	transition: 0.2s border-color;
+}
+.frame__demos a:hover, 
+.frame__demos a:focus {
+	border-color: transparent;
+}
+.frame__links a:not(:last-child), 
+.frame__demos a:not(:last-child) {
+	margin-right: 1rem;
+}
+a.frame__demo--current {
+	border-color: transparent;
+	color: var(--color-text);
+}
+a.frame__demo {
+	padding: 1rem;
+}
+
+/*搜索框*/
+.search {
+    margin: -0.5rem;
+    padding: 0;
+    background: #c9644b;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    position: absolute;
+    right:6rem;
+}
+.search input,.search button{
+    border: none;
+    outline: none;
+}
+.search form{
+    position: relative;
+    width: 300px;
+    margin:0 auto;
+}
+.search input, .search button{
+    background: transparent;
+}
+.search input{
+    width: 100%;
+    height: 30px;
+    padding-left: 13px;
+    border:2px solid #e9cdc5;  
+}
+.search input::placeholder{
+    color: #695c59;
+}
+.search button{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0.2rem;
+    right: 0;
+}
+.search button:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #e9cdc5;
+}
+.search input:focus{
+    border-color: #695c59
+}
+
+.section_movie{
+    position: relative;
+    height: 565px;
+    width: 100%;
+}
+.section_movie_1{
+    position: absolute;
+    left: 210px;
+    top: 40px;
+}
+.section_movie_1 h2 a{
+    color: #494949;
+    font-size: 20px;
+}
+.section_movie_2{
+    position: absolute;
+    width: 900px;
+    left: 325px;
+    top: 40px;
+}
+
+
+
+.movie_top{
+    height: 210px;
+}
+.movie_down{
+    height: 210px;
+}
+.section_movie_2 ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.section_movie_2 ul img{
+    width: 250px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+.section_movie li{
+    width: 250px;
+    display: inline-block;
+    margin-right: 35px; 
+    height: 300px;
+}
+.section_movie ul li div a{
+    font-size: 13px;
+    line-height: 1.54;
+    color:#3a1911;
+}
+.section_film{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-color: #F7F7F7;
+    color: #9c0e0e;
+}
+.wrapper_left{
+    position: absolute;
+    left: 210px;
+    top: 40px;
+}
+.wrapper_left ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.wrapper_left ul li{
+    margin-bottom: 8px;
+}
+.wrapper_left h2 a{
+    font-size: 24px;
+}
+.wrapper_left ul li a{
+    font-size: 14px;
+}
+.film_left{
+    color: #9c0e0e;
+}
+.film_left h2 a{
+    color: #9c0e0e;
+}
+.film_left ul li a{
+    color: #9c0e0e;
+}   
+.wrapper_center ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.wrapper_center{
+    position: absolute;
+    left: 325px;
+    top: 40px;
+    width: 540px;
+}
+.wrapper_center ul li{
+    display: inline-block;
+}
+.film_center img{
+    width: 100px;
+    height: 145.37px;
+}
+.film_center .pic{
+    margin: 0 15px 10px 15px;
+}
+.film_center .title{
+    text-align: center;
+}
+.film_center .title a{
+    color: #333;
+    font-size: 14px;
+}
+.film_center ul li{
+    margin-bottom: 30px;
+}
+.film_center ul li .purcharse{
+    background-color: #9c0e0e;
+    color: white;
+    text-align: center;
+    margin-left:30px;
+}
+.film_center .rating span{
+    margin-left: 30px;
+    font-size: 12px;
+    display: block;
+
+}
+.film_center .rating{
+    margin-bottom: 10px;
+}
+.film_center .title{
+    margin-bottom: 5px;
+}
+.wrapper_right{
+    position: absolute;
+    left: 890px;
+    top: 40px;
+    width: 280px;
+}
+.movie_right a{
+    color:#669;
+}
+.movies ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.movies ul li{
+    display: inline-block;
+    width: 48px;
+}
+.movies ul li a{
+    font-size: 12px;
+}
+.hotMovie ol{
+    padding-left: 15px;
+}
+.hotMovie ol li a{
+    font-size: 13px;
+}
+.hotMovie ol li{
+    border-bottom: 1px solid  #EAEAEA;
+    margin-bottom: 10px;
+}
+
+.section_book{
+    height: 680px;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+}
+.section_book_left h2 a{
+    color: #4a2f14;
+    font-weight: 500;
+}
+.section_book_left ul li a{
+    color: #3a1911;
+}
+.section_book_left_logo a.book_logo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url('./images1/app_icons_50_10.jpg') no-repeat 0 0;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.section_book_left_logo div a{
+    color: #614e3c;
+    font-size: 12px;
+}
+.book_center img{
+    width: 100px;
+    height: 142px;
+}
+.book_center_top1 ul li{
+     margin: 0 10px 0 10px;
+    display: inline-block;
+    width: 100px; 
+    font-size: 12px;
+    text-align: center;
+}
+div.book_title{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+div.book_title a{
+    color: #614e3c;
+}
+a.book_free_reading{
+    display: block;
+    width: 68px;
+    height: 23px;
+    color: #fff;
+    background-color: #878882;
+    margin-left: 16px;
+    margin-top: 5px;
+}
+.book_center_top2 ul li{
+     margin: 0 10px 0 10px;
+    display: inline-block;
+    width: 100px; 
+    font-size: 12px;
+    text-align: center;
+}
+.book_right span{
+    color: #999;
+    font-size: 12px;
+}
+.book_right ul{
+    list-style-type: none;
+    border-bottom: 1px solid #f2efef;
+    padding-left: 0;
+    margin: 0;
+    padding: 10px 0 10px 0;
+}
+.book_right ul li{
+    display: inline-block;
+    margin-right: 8px;
+}
+.book_right ul li a{
+    color:#3a1911;
+    font-size: 12px;
+}
+.section_music{
+    height: 850px;
+    width: 100%;
+    position: relative;
+}
+.music_left h2 a{
+    color: #3a1911;
+}
+.music_left ul li a{
+    color: #555d53;
+}
+a.music_left_logo1{
+    display: block;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+    background: url('./images1/app_icons_50_10.jpg') no-repeat -250px 0;
+    border-radius: 10px;
+}
+a.music_left_logo2{
+    display: block;
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background: url('./images1/app_icons_50_10.jpg') no-repeat -50px 0;
+    border-radius: 10px;
+}
+.music_logo_title a{
+    color:#3a1911;
+    font-size: 12px; 
+}
+.music_center_top_item ul{
+    /* margin-bottom: 20px; */
+}
+.music_center_top_item ul li{
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.music_center_top_item ul li span{
+    color:#555d53;
+    font-size: 12px;
+    position: relative;
+    left: 30px;
+    top: -23px;
+}
+.music_center_top_item ul li div{
+    color:#555d53;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.music_center_top_item ul li div a{
+    color: #555d53;
+    font-size: 12px;
+}
+.music_center_down_item ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;
+}
+.music_center_down_item ul li img{
+    /* display: inline-block; */
+    width: 80px;
+    height: 80px;
+}
+.music_center_down_item ul li div{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.music_player ol{
+    list-style: none;
+    padding-left: 0;
+}
+.music_player ol li{
+    height: 90px;
+} 
+.music_player ol li span{
+    position: relative;
+    top: -35px;
+}
+.music_player .music_div{
+    position: relative;
+    left: 80px;
+    top: -50px;
+}
+.music_author a{
+    color: #555d53;
+    font-size: 12px;
+}
+.music_tag{
+    margin-top: 5px;
+    color:#999;
+    font-size: 12px;
+}
+.location_left h2 a{
+    color: #3a1911;
+}
+.location_left_item ul li{
+    width: 100px;
+}
+.location_left_item ul li a{
+    color: #111;
+}
+.location_center_show ul li{
+    margin-right: 195px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.location_center_show_title{
+    position: absolute;
+    left: 80px;
+    top: -5px;
+    width: 180px;
+}
+.location_center_show_title div{
+    margin: 2.5px 0;
+}
+.location_center_show ul li div a{
+    color: #643;
+    font-size: 13px;
+}
+.location_center_show ul li div div{
+    color:#666;
+    font-size: 12px;
+}
+.location_right a{
+    color: #333;
+    font-size: 14px;
+}
+.location_right h3{
+    margin: 2px 0;
+    font-weight: 500;
+}
+.location_right ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0px 0 10px;
+}
+.location_right ul li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#bottom{
+    position:relative;
+    top:2000px;
+    background-color: #f8f9f9;
+    color: slategrey;
+    height: 60px;
+}

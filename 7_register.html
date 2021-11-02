@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="Movie_img/icon.png">
+	<link rel="stylesheet" href="https://use.typekit.net/cme7ioi.css">
+    <link rel="stylesheet" type="text/css" href="register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="top">           <!--顶部导航栏 -->
+        <div class="top_title">
+            <a href="1_homepage.html" class="frame__demo">Home</a>
+            <a href="2_userinfo.html" class="frame__demo">My page</a>
+            <a href="3_movie.html" class="frame__demo">Movie</a>
+            <a href="index4.html" class="frame__demo">Music</a>
+            <a class="frame__demo"></a>
+            <a class="frame__demo"></a>
+         </div>   
+        
+         <div class="top_title">
+            <a href="6_login.html" class="frame__demo">Log in</a>
+            <a href="7_register.html" class="frame__demo frame__demo--current">Sign up</a>
+        </div>   
+
+        <div class="search">
+            <form>
+                <input type="text" placeholder="search...">
+                <button type="submit"></button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div id="loginDiv">
+         <form action="" id="form">
+        <h1 style="text-align: center;color: #3a1911;">SIGN UP</h1>
+        <p>User Name:<br><input id="userNname" type="text" autofocus required><label id="name_trip"></label></p>
+         
+        <p>Passward:<br><input id="password" type="password" required "><label id="password_trip"></label></p>
+         
+        <p>Retype Passward:<br><input id="surePassword" type="password" required><label id="surePassword_trip"></label></p>
+ 
+        <p>Email:<br><input id="email" type="email" required >
+             <label id="emil_trip"></label>
+        </p>
+        <p style="text-align: center; margin-top: 30px;">
+         <input type="submit" class="button" onblur="checkForm()" onclick="return submitT()" value="login">
+        <input type="reset" class="button" value="reset">
+        </p>
+        </form>
+    </div>
+    <div id="bottom"><center>copyright: the Sith Lord</center></div>
+
+
+</body>
+</html>
