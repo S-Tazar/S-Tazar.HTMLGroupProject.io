@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MoBoMu: Book</title>
+    <link rel="shortcut icon" href="groupproject/mobomu.png">
+	<link rel="stylesheet" href="https://use.typekit.net/cme7ioi.css">
+    <link rel="stylesheet" type="text/css" href="book.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top">           <!--Top nav -->
+        <div class="container">
+            <!--Navbar start-->
+            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                <!--LOGO-->
+                <img src="groupproject/mobomu_logo.png" width="40" height="40" alt="" class="img-thumbnail" id="mbmlogo">
+                <a class="navbar-brand" href="1_homepage.html"> 
+                mobomu
+                </a> <!--press logo to enter the homepage-->
+                <!--Span menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+                </button>
+                
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav mr-auto">
+                        <!--navlist-->
+                        <li class="nav-item"><a href="3_movie.html" class="nav-link">Movie</a></li>
+                        <li class="nav-item active"><a href="4_book.html" class="nav-link">book</a></li>
+                        <li class="nav-item"><a href="5_music.html" class="nav-link">music</a></li>
+                    </ul>
+                </div>
+            
+        
+                
+                <div class="collapse navbar-collapse" id="right-nav">
+                    <!--search box--> 
+                    <ul class="navbar-nav ml-auto">
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="search...">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <!--login & singup -->
+                        <li class="nav-item"><a href="6_login.html" class="nav-link">Logout</a></li>
+                    </ul>
+                    <!--user icon-->
+                    <a href="2_userinfo.html" class="dropdown-toggle nav-link d-flex align-items-center justify-content-center icon-cart p-0" id="usericon">
+                    <img src="groupproject/avatar.jfif" width="40" height="40" alt="" class="img-thumbnail">
+                    </a>
+                </div>
+            </nav>
+            <!-- END nav -->
+            </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        
+    </div>
+
+    <div id="basic_info">
+        <table border="0" id="basic_table">
+            <tr>
+              <td colspan="2" id="mov_title"><b>The Little Prince</b></td>
+            </tr>
+            <tr>
+              <td rowspan="11" id="mov_cover"><img src="Book_img/Little_Prince.jpg"></td>
+              </tr>
+              <tr>
+              <td><b><font color="#757A84">Author: </font></b>&nbsp;[France] Antoni de Saint-Exupery</td>
+            </tr>
+            <tr>
+              <td><b><font color="#757A84">Publisher: </font></b>&nbsp;	People's Literature Publishing House</td>
+            </tr>
+            <tr>
+                <td><b><font color="#757A84">Original title: </font></b>&nbsp;	Le Petit Prince</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Translator: </font></b>&nbsp;Ma Zhenpin</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Publication year: </font></b>&nbsp;2003-8</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Number of pages: </font></b>&nbsp;	97</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Pricing: </font></b>&nbsp;	22.00 yuan</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Finishing: </font></b>&nbsp;Paperback</td>
+              </tr>
+              <tr>
+                <td><b><font color="#757A84">Retro Hugo Award, Best Novella (2019)
+              </tr>
+            
+          </table>
+
+          <span id="vertical-line"></span>
+   
+          <div id="info_right">
+          <table border="0" class="pop_table">
+            <tr><td></td></tr>
+            <tr><td id="pop_title">BOOK RATING</td></tr>
+            <tr>
+                <td><img src="Book_img/pop_mov.png">&nbsp; &nbsp; <b> 4.31</b> goodreads</td>
+                <td>1,614,203 Ratings</td>
+            </tr>
+           
+            <tr>
+                <td><img src="Book_img/pop_mov.png">&nbsp; &nbsp; <b> 9.0</b> Douban</td>
+                <td>661575 Reviews</td>
+            </tr>
+          </table>
+          
+          <hr id="horizental-line">
+          
+          <table border="0" class="pop_table">
+            <tr>
+                <td><img src="Book_img/good.png">&nbsp; &nbsp; Douban Books <b>No.9 </b></td>  
+            </tr>
+            <tr>
+                <td><img src="Book_img/good.png">&nbsp; &nbsp; 2020 Douban Reading Annual List </td>  
+            </tr>
+          </table>
+
+        </div>
+
+        <div id="Synopsis">
+            <div class="division">
+                <div class="division_left"></div>
+                <div class="division_title">Synopsis</div>
+                <div id="division_right_sy"></div>
+            </div>
+
+            <div id="plot_intro">
+                <br><br>
+                A pilot stranded in the desert awakes one morning to see, standing before him, 
+                the most extraordinary little fellow. "Please," 
+                asks the stranger, "draw me a sheep." 
+                And the pilot realizes that when life's events are too difficult to understand, 
+                there is no choice but to succumb to their mysteries. He pulls out pencil and paper... 
+                And thus begins this wise and enchanting fable that, in teaching the secret of what is really important in life, 
+                has changed forever the world for its readers.
+                <br><br>
+                Few stories are as widely read and as universally cherished by children and adults alike as The Little Prince, 
+                presented here in a stunning new translation with carefully restored artwork. 
+                The definitive edition of a worldwide classic, it will capture the hearts of readers of all ages.
+               
+                
+                
+            </div>
+        </div>
+
+        <div id="cast">
+            <div class="division">
+                <div class="division_left"></div>
+                <div class="division_title">Readers also enjoyed</div>
+                <div id="division_right_ca"></div>
+            </div>
+           
+            <div id="cast_table">
+            <table border="0" id="cast_realtable">
+               <tr>
+                   <td><center><img src="Book_img/The Kite Runner.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/Animal Farm.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/Charlotte's Web.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/Peter Pan.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/Robinson Crusoe.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/1984.jpg" class="cast_pic"></center></td>
+                   <td><center><img src="Book_img/Flipped.jpg" class="cast_pic"></center></td>
+               </tr>
+               <tr>
+                <td><center>The Kite Runner</center></td>
+                <td><center>Animal Farm</center></td>
+                <td><center>Charlotte's Web</center></td>
+                <td><center>Peter Pan</center></td>
+                <td><center>Robinson Crusoe</center></td>
+                <td><center>1984</center></td>
+                <td><center>Flipped</center></td>
+            </tr>
+            </table>
+            </div>
+        </div>
+
+        <div id="watch">
+            <div class="division">
+                <div class="division_left"></div>
+                <div class="division_title">WHERE TO BUY</div>
+                <div id="division_right_wa"></div>
+            </div>
+            <br>
+            <div class="watch_url" >
+                <a href="https://item.jd.com/10120390.html?cu=true&utm_source=book.douban.com&utm_medium=tuiguang&utm_campaign=t_15055_&utm_term=3d039652f862468f957dbec7dece5f94">
+                        <img src="Book_img/JD.jpg" class="watch_icon"><a class="watch_text" href="https://item.jd.com/10120390.html?cu=true&utm_source=book.douban.com&utm_medium=tuiguang&utm_campaign=t_15055_&utm_term=3d039652f862468f957dbec7dece5f94">&nbsp;&nbsp;JINGDONG</a>
+                </a>
+            </div>
+            <div class="watch_url" >
+                <a href="http://item.kongfz.com/book/56560768.html?push_type=2&min_price=30.00&utm_source=101004009001">
+                    <img src="Book_img/KONG.jpg" class="watch_icon" ><a class="watch_text" href="http://item.kongfz.com/book/56560768.html?push_type=2&min_price=30.00&utm_source=101004009001">KONGfz</a>
+            </a>
+            </div>
+            <div class="watch_url" >
+                <a href="https://www.amazon.com/-/zh/dp/B00CBDG2ZG/ref=sr_1_1?__mk_zh_CN=亚马逊网站&keywords=小王子&qid=1637766552&sr=8-1">
+                    <img src="Book_img/amazon.webp" class="watch_icon"><a class="watch_text" href="https://www.amazon.com/-/zh/dp/B00CBDG2ZG/ref=sr_1_1?__mk_zh_CN=亚马逊网站&keywords=小王子&qid=1637766552&sr=8-1">&nbsp;&nbsp;AMAZON</a>
+            </a>
+            </div>
+            <div class="watch_url" >
+                <a href="http://product.dangdang.com/25067469.html">
+                    <img src="Book_img/Dang .webp" class="watch_icon"><a class="watch_text" href="http://product.dangdang.com/25067469.html">&nbsp;&nbsp;DANGDANG</a>
+            </a>
+            </div>
+        </div>
+
+        <div id="review">
+            <div class="division">
+                <div class="division_left"></div>
+                <div class="division_title">BRIEF COMMENT FOR SPIRITED AWAY</div>
+                <div id="division_right_re"></div>
+            </div>
+            
+            <div id="review_text">
+                <div id="review_write" >
+                    <textarea id="review_add" placeholder="What did you think of the book?(optional)"></textarea>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="button"  value="Submit" class="button">
+                </div>
+                <br> <br> <br> <br>
+                <div id="cast_table">
+                    <table border="0" class="review_brief">
+                       <tr>
+                          <td width="70px"> 
+                             <img src="Book_img/MischaS.jpg" width="50px" >
+                          </td>
+                           <td><font color="blue">MischaS_</font>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<font color=#757A84>April 22, 2019</font></td>
+                        </tr>
+                        <tr>
+                            <td height="80px" colspan="2">I'm still waiting for The Little Prince to return. </td>                                   
+                         </tr>                               
+                    </table>
+
+                    <hr>
+                    <table border="0" class="review_brief">
+                        <tr>
+                            <td width="70px"> 
+                                <img src="Book_img/chloe.jpg" width="50px" >
+                            </td>
+                            <td><font color="blue">chloe</font>
+                             &nbsp;&nbsp;&nbsp;&nbsp;<font color=#757A84>October 12, 2021 </font></td>
+                         </tr>
+                         <tr>
+                             <td height="150px" colspan="2">I just can't get over this book. It is absolutely stunning. 
+                                <br><br>
+                                This is a book I will continuously re-read throughout my life, and is especially great to read when you are becoming too consumed in the adult world. I'm in my exam period currently, so reading this now was perfect. 
+                                <br><br>
+                                I also listened to the audio book for this re-read, and the narrator was perfect for this story (and he is Australian!)</td>                                   
+                          </tr>                               
+                     </table>
+
+                     <hr>
+                    <table border="0" class="review_brief">
+                        <tr>
+                            <td width="70px"> 
+                                <img src="Book_img/emma.jpg" width="50px" >
+                             </td>
+                            <td><font color="blue">emma</font>
+                             &nbsp;&nbsp;&nbsp;&nbsp;<font color=#757A84>March 9, 2020</font></td>
+                         </tr>
+                         <tr>
+                             <td height="180px" colspan="2">And now here is my secret, a very simple secret: It is only with the heart that one can see rightly; what is essential is invisible to the eye.”
+                                <br>
+                                ---
+                                <br>
+                                this book was just as lovely the second time as it was the first. (and almost as great in english as in french.)
+                                <br><br>
+                                not sure if i can write extensively on this book. it's just so lovely and wonderful, and it really seems like one of those books that reveals another facet with every reading.
+                                <br><br>
+                                lovelovelove this one.</td>                                   
+                          </tr>                               
+                     </table>
+
+                     <hr>
+                     <table border="0" class="review_brief">
+                         <tr>
+                            <td width="70px"> 
+                                <img src="Book_img/Paul Bryant.jpg" width="50px" >
+                             </td>
+                             <td><font color="blue">Paul Bryant</font>
+                              &nbsp;&nbsp;&nbsp;&nbsp;<font color=#757A84>April 29, 2011</font></td>
+                          </tr>
+                          <tr>
+                              <td height="80px" colspan="2">So amazing. I can see many rereads of this in the years to come.</td>                                   
+                           </tr>                               
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+
+       
+
+</div>
+
+<div id="bottom"><center>Copyright: The Sith Lord</center></div>
+
+
+
+</body>
+</html>

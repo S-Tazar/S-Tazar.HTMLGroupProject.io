@@ -1,24 +1,4 @@
-/*主要是字体和颜色的设置，有一些属性没有用到，最终版用不到就会删除*/
-body {
-	margin: 0;
-	--color-frame-bg: #c9644b;
-	--color-bg: white;
-    --color-link: #9c0e0e;
-    --color-link-hover: #fff;
-    --color-menu: #3a1911;
-    --color-menu-hover: #ffffff;
-    --color-menu-deco: #9c0e0e;
-    color: var(--color-text);
-    background-color: var(--color-bg);
-    --cursor-stroke: none;
-    --cursor-fill: #6b3f24;
-    --cursor-stroke-width: 1px;
-    -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-}
-
-/*首页导航*/
+/*nav*/
 a {
 	text-decoration: none;
 	color: white;
@@ -26,97 +6,10 @@ a {
 	cursor: pointer;
 }
 
- a:hover,
+a:hover,
  a:focus {
 	color: black;
 	outline: none;
-}
-
-.top {
-	position: relative;
-	padding: 1rem 1.5rem;
-	width: 100%;
-	display: flex;
-	text-transform: uppercase;
-	z-index: 1000;
-	background: var(--color-frame-bg);
-}
-.top__title {
-
-	font-size: 1rem;
-	margin: 0;
-	font-weight: 400;
-}
-
-/*每一个选项*/
-.frame__demos a {
-    top: 0.5rem;
-	border-bottom: 1px solid currentColor;
-	transition: 0.2s border-color;
-}
-.frame__demos a:hover, 
-.frame__demos a:focus {
-	border-color: transparent;
-}
-.frame__links a:not(:last-child), 
-.frame__demos a:not(:last-child) {
-	margin-right: 1rem;
-}
-a.frame__demo--current {
-	border-color: transparent;
-	color: var(--color-text);
-}
-a.frame__demo {
-	padding: 1rem;
-}
-
-/*搜索框*/
-.search {
-    margin: -0.5rem;
-    padding: 0;
-    background: #c9644b;
-    font-weight: 500;
-    margin-right: 0.5rem;
-    position: absolute;
-    right:6rem;
-}
-.search input,.search button{
-    border: none;
-    outline: none;
-}
-.search form{
-    position: relative;
-    width: 300px;
-    margin:0 auto;
-}
-.search input, .search button{
-    background: transparent;
-}
-.search input{
-    width: 100%;
-    height: 30px;
-    padding-left: 13px;
-    border:2px solid #e9cdc5;  
-}
-.search input::placeholder{
-    color: #695c59;
-}
-.search button{
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    position: absolute;
-    top: 0.2rem;
-    right: 0;
-}
-.search button:before{
-    content: "\f002";
-    font-family: FontAwesome;
-    font-size: 16px;
-    color: #e9cdc5;
-}
-.search input:focus{
-    border-color: #695c59
 }
 
 #basic_info{
@@ -209,7 +102,7 @@ a.frame__demo {
   
   .division_left{
       float: left;
-      background-color:#c9644b;
+      background-color:#c53151;
       width: 5%;
       height: 20px;
   }
@@ -228,7 +121,7 @@ a.frame__demo {
   #division_right_sy{
       position:absolute;
       left: 15%;
-      background-color:#c9644b;
+      background-color:#c53151;
       width: 85%;
       height: 20px;
   }
@@ -247,7 +140,7 @@ a.frame__demo {
   #division_right_ca{
       position:absolute;
       left: 19%;
-      background-color:#c9644b;
+      background-color:#c53151;
       width: 81%;
       height: 20px;
   }
@@ -285,7 +178,7 @@ a.frame__demo {
   #division_right_wa{
       position:absolute;
       left: 23%;
-      background-color:#c9644b;
+      background-color:#c53151;
       width: 77%;
       height: 20px;
   }
@@ -297,7 +190,7 @@ a.frame__demo {
       position: relative;
       top:70px;
       box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
-     /* background-color: #c9644b; */
+     /* background-color: #c53151; */
       border-radius: 10px;
       margin-right: 20px;
       font-size: 18px;
@@ -327,7 +220,7 @@ a.frame__demo {
   #division_right_re{
       position:absolute;
       left: 38%;
-      background-color:#c9644b;
+      background-color:#c53151;
       width: 62%;
       height: 20px;
   }
@@ -343,7 +236,7 @@ a.frame__demo {
       margin-right: 3rem;
       margin-bottom: 3rem;
       font-family: "Century Gothic";
-      background-color: #c9644b;
+      background-color: #c53151;
       border-radius: 6px; 
       margin-bottom: 10px;
       border: 1px solid black;

@@ -1,0 +1,17 @@
+@charset "utf-8";
+*{padding:0;margin:0}
+body{font-family:verdana,arial,tahoma;font-size:12px;color:#333}
+img{border:0}
+
+.new_banner{width:1150px;height:393px;border:1px solid #E1E1E1;position:relative; margin:0 auto; padding:9px; background:url(../images/loading.gif) no-repeat center center #fff;}
+.rslides{width:100%;position:relative;list-style:none;padding:0}
+.rslides_nav{ width:36px; height:36px; background-image:url(../images/banner_new.png); display:block; position:absolute;  text-indent:-10em; overflow:hidden;}
+
+.prev{ background-position:0 0;left:-40px; top:180px;}
+.prev:hover{ background-position:0 -36px;}
+.next{ background-position:-36px 0;right:-40px; top:180px;}
+.next:hover{ background-position:-36px -36px;}
+.rslides_tabs{ position:absolute; left:525px; top:370px;clear:both;text-align:center; z-index:99999;}
+.rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px}
+.rslides_tabs a{ width:12px; height:12px; background:#fff;text-indent:-5em; overflow:hidden; display:block; float:left; margin-left:6px;border-radius:6px;}
+.rslides_tabs .rslides_here a{ background:#D968C0;}

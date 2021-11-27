@@ -1,0 +1,344 @@
+
+/*nav*/
+a {
+	text-decoration: none;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+a:hover,
+ a:focus {
+	color: black;
+	outline: none;
+}
+
+#basic_info{
+    font-family: 'Franklin Gothic FS Book',sans-serif;
+     background-color:white;   
+     color:#2A2C32;
+      width:940px;
+      height:auto;
+      font-size: 14px;
+      position:absolute;    /*设置div的水平剧中*/
+      left: 50%;
+     margin-top: 25px;
+     margin-left: -470px;
+     top:100px
+  }
+  
+  #basic_table{  
+      float: left;
+      width:62%;
+      height: 300px;
+  }
+  
+  #basic_table td{
+      height: 24px;
+  }
+  
+  #mov_title{
+      font-size: 26px;
+      font-family: 'Neusa Next Pro Compact',Impact,Arial,sans-serif;
+      padding-bottom: 15px;
+  }
+  
+  #mov_cover{
+      width: 250px;
+      height: auto;
+  }
+  
+  
+  #mov_cover img{
+      margin:10px;
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+  }
+  
+  #vertical-line{
+      display: inline-block;
+      border-left: 1px solid #ccc;
+      margin-top: 45px;
+      margin-left: 20px;
+      margin-right: 5px;
+      margin-bottom: 0px;
+      height: 345px;
+  }
+  
+  #info_right{ 
+    font-family: 'Franklin Gothic FS Book',sans-serif;    
+      float: right;
+      width:34%;
+      height: auto;
+  }
+  
+  .pop_table td{
+      height: 30px;
+  }
+  
+  
+  #pop_title{
+      height: 25px;
+      font-size: 16px;
+      font-family: 'Neusa Next Pro Compact',Impact,Arial,sans-serif;
+  }
+  
+  #horizental-line{          /*给水平线改色*/
+      background-color: #ccc;
+      height: 1px;
+      border:0px;
+      margin-bottom: 20px;
+  }
+  
+  #Synopsis{
+      width: auto;
+      height: 170px;
+      margin-bottom: 30px;
+  }
+  
+  .division{
+      margin-top: 10px;
+  }
+  
+  .division_left{
+      float: left;
+      background-color:#c53151;
+      width: 5%;
+      height: 20px;
+  }
+  
+  .division_title{
+      position:absolute;
+      height: 20px;
+      margin:0;
+      border:0;
+      padding: 0;
+      left: 6%;
+      font-size: 20px;
+      font-family: 'Neusa Next Pro Compact',Impact,Arial,sans-serif;
+      font-weight: bold;
+  }
+  #division_right_sy{
+      position:absolute;
+      left: 15%;
+      background-color:#c53151;
+      width: 85%;
+      height: 20px;
+  }
+  
+
+  #plot_intro{
+      font-family: 'Franklin Gothic FS Book',sans-serif;
+      text-indent: 0;
+      position:relative;
+      top:22px;
+      margin-left: 20px;
+      font-size: 16px;
+      line-height: 20px;
+  }
+  
+  #division_right_ca{
+      position:absolute;
+      left: 28%;
+      background-color:#c53151;
+      width: 72%;
+      height: 20px;
+  }
+  
+  #cast{
+      margin-top: 8rem;
+      width: auto;
+      height: 270px;
+  }
+  
+  #cast_table{
+      font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+      position:relative;
+      top:40px;
+      height: 200px;
+      width: auto;
+  }
+  
+  #cast_realtable{
+      width: 100%;
+      height: 100%;
+  }
+  
+  .cast_pic {
+      width:95px;
+      height: 133px;
+  }
+  
+  #watch{
+      width: auto;
+      height: 160px;
+      margin-bottom: 30px;
+  }
+  
+  #division_right_wa{
+      position:absolute;
+      left: 20%;
+      background-color:#c53151;
+      width: 80%;
+      height: 20px;
+  }
+  
+  .watch_url{
+      display: inline-block;
+      width:194px;
+      height: 50px;
+      position: relative;
+      top:70px;
+      box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+     /* background-color: #c53151; */
+      border-radius: 10px;
+      margin-right: 20px;
+      font-size: 18px;
+      font-family: 'Neusa Next Pro Compact',Impact,Arial,sans-serif;
+      font-weight: bold;
+  }
+  a {text-decoration: none}
+  
+  .watch_icon{
+      height: 40px;
+      margin: 5px;
+  }
+  
+  .watch_text{
+      color: black;
+      position: relative;
+      top:-15px;
+      left: 25px;
+  }
+
+  #review{
+      width: auto;
+      height: 600px;
+      margin-bottom: 100px;
+  }
+  
+  #division_right_re{
+      position:absolute;
+      left: 38%;
+      background-color:#c53151;
+      width: 62%;
+      height: 20px;
+  }
+  
+  #review_text{
+      position:relative;
+      top:40px;
+      height: 560px;
+      width: auto;
+  }
+  
+  .button{
+      margin-right: 3rem;
+      margin-bottom: 3rem;
+      font-family: "Century Gothic";
+      background-color: #c53151;
+      border-radius: 6px; 
+      margin-bottom: 10px;
+      border: 1px solid black;
+      color:white;
+      height:25px;
+      width: 80px;
+  }
+  
+  #review_write{
+      margin-top: 5%;
+      margin-bottom: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+      width:90%;
+      height: 70px;
+      position: relative;
+      top:40px;
+      box-shadow:0 0 20px rgba(0, 0, 0, 0.3);
+      border-radius: 4px;
+      margin-right: 20px;
+  }
+  
+  #review_add{
+      width: 80%;
+      height: 60%;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-color: #f8f9f9;
+      border-radius: 4px;
+      border: 1px solid #f8f9f9;
+  
+  }
+  
+  .review_brief{
+      position:relative;
+      top:5px;
+      
+      width: 90%;
+      margin-left: 3%;
+  }
+  
+  #gray{
+      color: slategray;
+  }
+  #user_information {
+    margin-top: 10px;
+    background-color: lightskyblue;
+    float: right;
+    width: 30%;
+    display: block;
+    text-align: left;
+
+}
+
+#user_intro {
+    margin-left:37px;
+    display: block;
+    float: left;
+    width: 60%;
+    clear: right;
+    margin: 0px;
+}
+
+#user_intro img {
+    float: left;
+}
+
+#my_movies {
+    float: left;
+    width: 65%;
+}
+
+#my_movies li {
+    display:inline;
+    border: none;
+}
+
+footer {
+    clear: both;
+}
+
+#reviews img {
+    float: left;
+    margin-right: 15px;
+    clear: both;
+}
+
+h3 {
+    margin-left: 37px;
+}
+
+img {
+    border: none;
+}
+  #bottom{
+      position:relative;
+      top:2400px;
+      background-color: #f8f9f9;
+      color: slategrey;
+      height: 60px;
+  }
+
+
+    

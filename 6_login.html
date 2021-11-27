@@ -3,51 +3,80 @@
  
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
-    <link rel="shortcut icon" href="Movie_img/icon.png">
+    <title>MoBoMu: Login</title>
+    <link rel="shortcut icon" href="groupproject/mobomu.png">
 	<link rel="stylesheet" href="https://use.typekit.net/cme7ioi.css">
+    <link rel="stylesheet" type="text/css" href="style2.css" />
     <link rel="stylesheet" type="text/css" href="register.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-    <div class="top">           <!--顶部导航栏 -->
-        <div class="top_title">
-            <a href="1_homepage.html" class="frame__demo">Home</a>
-            <a href="2_userinfo.html" class="frame__demo">My page</a>
-            <a href="3_movie.html" class="frame__demo">Movie</a>
-            <a href="index4.html" class="frame__demo">Music</a>
-            <a class="frame__demo"></a>
-            <a class="frame__demo"></a>
-         </div>   
+    <div class="top">           <!--Top nav -->
+        <div class="container">
+            <!--Navbar start-->
+            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                <!--LOGO-->
+                <img src="groupproject/mobomu_logo.png" width="40" height="40" alt="" class="img-thumbnail" id="mbmlogo">
+                <a class="navbar-brand" href="1_homepage.html">MOBOMU</a> <!--press logo to enter the homepage-->
+                <!--Span menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+                </button>
+                
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav mr-auto">
+                        <!--navlist-->
+                        <li class="nav-item"><a href="3_movie.html" class="nav-link">Movie</a></li>
+                        <li class="nav-item"><a href="4_book.html" class="nav-link">book</a></li>
+                        <li class="nav-item"><a href="5_music.html" class="nav-link">music</a></li>
+                    </ul>
+                </div>
+            
         
-         <div class="top_title">
-            <a href="6_login.html" class="frame__demo frame__demo--current">Log in</a>
-            <a href="7_register.html" class="frame__demo">Sign up</a>
-        </div>   
-
-        <div class="search">
-            <form>
-                <input type="text" placeholder="search...">
-                <button type="submit"></button>
-            </form>
-        </div>
+                
+                <div class="collapse navbar-collapse" id="right-nav">
+                    <!--search box--> 
+                    <ul class="navbar-nav ml-auto">
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="search...">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <!--login & singup -->
+                        <li class="nav-item active"><a href="6_login.html" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="7_register.html" class="nav-link">signup</a></li>
+                    </ul>
+                    <!--user icon-->
+                    <a href="2_userinfo.html" class="dropdown-toggle nav-link d-flex align-items-center justify-content-center icon-cart p-0" id="usericon">
+                    <img src="groupproject/unnamed.jpg" width="40" height="40" alt="" class="img-thumbnail">
+                    </a>
+                </div>
+            </nav>
+            <!-- END nav -->
+            </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
         
     </div>
 
     <div id="loginDiv">
         <form action="" id="form">
-            <h1 style="text-align: center;color: #3a1911;">LOG  IN</h1>
+            <h1 style="text-align: center;color: #ffffff;">LOG  IN</h1>
             <p>User Name:<br><input id="userNname" type="text"><label id="name_trip"></label></p>
  
             <p>Password:<br><input id="password" type="password"><label id="password_trip"></label></p>
  
-            <div style="text-align: center;margin-top: 30px;">
-                <input type="submit" class="button" value="login">
-                <input type="reset" class="button" value="reset">
+            <div style="text-align: left;margin-top: 30px;margin-left: 15px;">
+                <input type="submit" class="button" value="Login">
+                <input type="reset" class="button" value="Forgot">
             </div>
         </form>
     </div>
-    <div id="bottom"><center>copyright: the Sith Lord</center></div>
+    <div id="bottom"><center>Copyright: The Sith Lord</center></div>
 
 </body>

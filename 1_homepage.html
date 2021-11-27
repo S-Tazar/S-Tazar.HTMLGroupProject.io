@@ -1,45 +1,78 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="shortcut icon" href="Movie_img/icon.png">
+    <title>MOBOMU: Show Your Love</title>
+    <link rel="shortcut icon" href="groupproject/mobomu.png">
 	<link rel="stylesheet" href="https://use.typekit.net/cme7ioi.css">
     <link rel="stylesheet" type="text/css" href="homepage.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="top">           <!--顶部导航栏 -->
-        <div class="top_title">
-            <a href="1_homepage.html" class="frame__demo frame__demo--current">Home</a>
-            <a href="2_userinfo.html" class="frame__demo">My page</a>
-            <a href="3_movie.html" class="frame__demo ">Movie</a>
-            <a href="index4.html" class="frame__demo">Music</a>
-            <a class="frame__demo"></a>
-            <a class="frame__demo"></a>
-         </div>   
-        
-         <div class="top_title">
-            <a href="6_login.html" class="frame__demo">Log in</a>
-            <a href="7_register.html" class="frame__demo">Sign up</a>
-        </div>   
 
-        <div class="search">
-            <form>
-                <input type="text" placeholder="search...">
-                <button type="submit"></button>
-            </form>
-        </div>
+    <div class="wrapper">
+
+    <div class="container">
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+        <!--LOGO-->
+        <img src="groupproject/mobomu_logo.png" width="40" height="40" alt="" class="img-thumbnail" id="mbmlogo">
+        <a class="navbar-brand" href="1_homepage.html">MOBOMU</a> <!--press logo to enter the homepage-->
+        <!--Span menu-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+        </button>
         
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav mr-auto">
+                <!--navlist-->
+                <li class="nav-item"><a href="3_movie.html" class="nav-link">Movie</a></li>
+                <li class="nav-item"><a href="4_book.html" class="nav-link">book</a></li>
+                <li class="nav-item"><a href="5_music.html" class="nav-link">music</a></li>
+            </ul>
+        </div>
+    
+
+        
+        <div class="collapse navbar-collapse" id="right-nav">
+            <!--search box--> 
+            <ul class="navbar-nav ml-auto">
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="search...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <!--login & singup -->
+                <li class="nav-item"><a href="6_login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="7_register.html" class="nav-link">signup</a></li>
+            </ul>
+            <!--user icon-->
+            <a href="2_userinfo.html" class="dropdown-toggle nav-link d-flex align-items-center justify-content-center icon-cart p-0" id="usericon">
+            <img src="groupproject/unnamed.jpg" width="40" height="40" alt="" class="img-thumbnail">
+            </a>
+        </div>
+    </nav>
+    <!-- END nav -->
     </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+        
+    </div><br/>
+	<center><iframe height=430 width=1250 src="banner/index.html" frameborder=0 allowfullscreen></iframe></center>
     <div class="section_film">
+	
         <div class="wrapper_left">
              <div class="film_left">
                 <h2><a href="#">Movie</a></h2>
                 <ul>
-                    <li><a href="#">Book&amp;</a></li>
+                    <li><a href="#">Book</a></li>
                     <li><a href="#">New Movies </a><span><img src="images1/new_menu.gif" alt="new_menu"></span></li>
                     <li><a href="#">Ranking List</a></li>
                     <li><a href="#">Genres</a></li>
@@ -53,7 +86,7 @@
                 <h2>
                 Hot List&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                 (&nbsp;
-                <a href="#" class="time_a">More...</a>
+                <a href="#" style="color: var(--color-link);" >More...</a>
                 &nbsp;)
             </h2>
             </div>
@@ -114,7 +147,7 @@
                    <h2>
                Film Genres &nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                (&nbsp;
-               <a href="#" class="time_a">More</a>
+               <a href="#" style=" color:var(--color-link);">More</a>
                &nbsp;)
                </h2>
                </div>
@@ -124,22 +157,22 @@
                        <li><a href="#">Comedy</a></li> 
                        <li><a href="#">Cartoon</a></li>
                        <li><a href="#">Fantasy</a></li>
-                       <li><a href="#">Action</a></li> 
-                       <li><a href="#">Suspense</a></li>
+                       <li><a href="#">Suspense</a></li> 
+                       <li><a href="#">Action</a></li>
                        <li><a href="#">Crime</a></li>
                        <li><a href="#">Thriller</a></li>
                        <li><a href="#">Literaty</a></li>
                        <li><a href="#">Documentary</a></li>
-                       <li><a href="#">Adventure</a></li>
-                       <li><a href="#">War</a></li>
                        <li><a href="#">Horror</a></li>
+                       <li><a href="#">War</a></li>
+                       <li><a href="#">Adventure</a></li>
                    </ul>
                </div>
                <div class="movie_hot">
                 <h2>
             Hot Films&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
             (&nbsp;
-            <a href="#" class="time_a">More</a>
+            <a href="#" style=" color:var(--color-link);;">More</a>
             &nbsp;)
             </h2>
             </div>
@@ -182,16 +215,16 @@
         <div class="wrapper_center">
             <div class="book_center">
             <div class="book_center_top">
-                <h2>Hot Books&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                <h2 style="color:#9c0e0e">Hot Books&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                 (&nbsp;
-                <a href="#">More</a>
+                <a href="#" style=" color:var(--color-link);">More</a>
                 &nbsp;)</h2>
                 <div class="book_center_top1">
                     <ul>
                         <li><a href="#"><img src="./images1/活着.jpeg" alt=""></a>
                             <div class="book_title"><a href="#">To Live</a></div>
                             <div>YuHua</div>
-                            <a href="#" class="book_free_reading">Free Trials</a></li>
+                            <a href="#" class="book_free_reading">Free Trials</a></li>   
                         <li><a href="#"><img src="./images1/白夜行.jpeg" alt=""></a>
                             <div class="book_title"><a href="#">Journey Under...</a></div>
                             <div> Keigo Higashino</div>
@@ -201,21 +234,21 @@
                             <div>Khaled Hosseini</div>
                             <a href="#" class="book_free_reading">Free Trials</a></li>
                         <li><a href="#"><img src="./images1/三体.jpeg" alt=""></a>
-                        <div class="book_title"><a href="#">The Three Body...</a></div>
+                        <div class="book_title"><a href="#">The Three ...</a></div>
                         <div>Liu Cixin</div>
                        <a href="#" class="book_free_reading">Free Trials</a></li>
                     </ul>
                 </div>
             </div>
             <div class="book_center_bottom">
-                <h2>E-Book&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                <h2 style="color:#9c0e0e">E-Book&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                 (&nbsp;
-                <a href="#">More..</a>
+                <a href="#" style=" color:var(--color-link);">More..</a>
                 &nbsp;)</h2>
                 <div class="book_center_top2">
                     <ul>
                         <li><div class="book_pic"><a href="#"><img src="./images1/斗破.jpeg" alt=""></a></div>
-                            <div class="book_title"><a href="#">Battle Through the...</a></div>
+                            <div class="book_title"><a href="#">Battle Through ...</a></div>
                             <div>Tian CanTuDou</div>
                             <a href="#" class="book_free_reading">Free Trials</a></li>
                         <li><div class="book_pic"><a href="#"><img src="./images1/hp.jpeg" alt=""></a></div>
@@ -223,8 +256,8 @@
                             <div>J.K.Rowling</div>
                             <a href="#" class="book_free_reading">Free Trials</a></li>
                         <li><div class="book_pic"><a href="#"><img src="./images1/时间简史.jpeg" alt=""></a></div>
-                            <div class="book_title"><a href="#">A Brief History of ...</a></div>
-                            <div>Stephen Hawking</div>
+                            <div class="book_title"><a href="#">A Brief History  ...</a></div>
+                            <div>Hawking</div>
                             <a href="#" class="book_free_reading">Free Trials</a></li>
                         <li><div class="book_pic"><a href="#"><img src="./images1/百年孤独.jpeg" alt=""></a></div>
                         <div class="book_title"><a href="#">One Hundred ...</a></div>
@@ -238,11 +271,11 @@
 
     <div class="wrapper_right">
         <div class="book_right">
-            <h2>Genres&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <h2 style="color:#9c0e0e">Genres&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
             (&nbsp;
-            <a href="#">More...</a>
+            <a href="#" style=" color:var(--color-link);">More...</a>
             &nbsp;)</h2>
-            <div class="book_right_first">
+            <div class="movies">
                 
                 <ul>
                     <li><a href="#">Art</a></li>
@@ -255,7 +288,6 @@
                     <li><a href="#">Mystery</a></li>
                     <li><a href="#">Music</a></li>
                     <li><a href="#">Business</a></li>
-                    <li><a href="#">More...</a></li>
                 </ul>
             </div>
             
@@ -266,7 +298,7 @@
     <div class="section_music">
     <div class="wrapper_left">
         <div class="music_left">
-            <h2><a href="#" target="_blank">Music</a></h2>
+            <h2 style="color:#9c0e0e"><a href="#" target="_blank" style="color:#9c0e0e">Music</a></h2>
             <div class="music_left_item">
                 <ul>
                     <li><a href="#">Muscian</a></li>
@@ -279,20 +311,20 @@
             </div>
             <a href="#" class="music_left_logo1"></a>
             
-            <div class="music_logo_title"><a href="#">DouBan FM</a></div>
+            <div class="music_logo_title"><a href="#">MOBOMU FM</a></div>
 
             <a href="#" class="music_left_logo2"></a>
             
-            <div class="music_logo_title"><a href="#">DouBan Muscian</a></div>
+            <div class="music_logo_title"><a href="#">MOBOMU Muscian</a></div>
 
         </div>
     </div>
     <div class="wrapper_center">
         <div class="music_center">
             <div class="music_center_top">
-                <h2>New Music&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+                <h2 style="color:#9c0e0e">New Music&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                 (&nbsp;
-                <a href="#">More...</a>
+                <a href="#" style=" color:var(--color-link);">More...</a>
                 
             &nbsp;)</h2>
                 <div class="music_center_top_item">
@@ -321,9 +353,9 @@
 
     <div class="wrapper_right">
         <div class="music_right">
-            <h2>Today's Hits&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
+            <h2 style="color:#9c0e0e">Today's Hits&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;&nbsp;&middot;
                 (&nbsp;
-                <a href="#">More...</a> 
+                <a href="#" style=" color:var(--color-link);">More...</a> 
                 &nbsp;)</h2>
 
             <div class="music_player">
@@ -362,10 +394,12 @@
             </div>
         </div>
     </div>
-    <div id="bottom"><center>copyright: the Sith Lord</center></div>
+
+<footer>
+    <div id="bottom"><center>Copyright: The Sith Lord</center></div>
+</footer>
+
+</div>
 </body>
 
 </html>
-
-
-    

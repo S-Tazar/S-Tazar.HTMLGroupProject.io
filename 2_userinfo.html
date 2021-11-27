@@ -3,40 +3,68 @@
 <head>
 
 <meta charset="utf-8">
-<title>My Page</title>
-
-<link rel="shortcut icon" href="Movie_img/icon.png">
+<title>MoBoMu: My Page</title>
+<link rel="shortcut icon" href="groupproject/mobomu.png">
 <link rel="stylesheet" href="https://use.typekit.net/cme7ioi.css">
 <link rel="stylesheet" type="text/css" href="userinfo.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 </style>
 </head>
 <body>
-    <div class="top">           <!--顶部导航栏 -->
-        <div class="top_title">
-            <a href="1_homepage.html" class="frame__demo">Home</a>
-            <a href="2_userinfo.html" class="frame__demo frame__demo--current">My page</a>
-            <a href="3_movie.html" class="frame__demo ">Movie</a>
-            <a href="index4.html" class="frame__demo">Music</a>
-            <a class="frame__demo"></a>
-            <a class="frame__demo"></a>
-         </div>   
+    <div class="top">           <!--Top nav -->
+        <div class="container">
+            <!--Navbar start-->
+            <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
+                <!--LOGO-->
+                <img src="groupproject/mobomu_logo.png" width="40" height="40" alt="" class="img-thumbnail" id="mbmlogo">
+                <a class="navbar-brand" href="1_homepage.html">MOBOMU</a> <!--press logo to enter the homepage-->
+                <!--Span menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+                </button>
+                
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav mr-auto">
+                        <!--navlist-->
+                        <li class="nav-item"><a href="3_movie.html" class="nav-link">Movie</a></li>
+                        <li class="nav-item"><a href="4_book.html" class="nav-link">book</a></li>
+                        <li class="nav-item"><a href="5_music.html" class="nav-link">music</a></li>
+                    </ul>
+                </div>
+            
         
-         <div class="top_title">
-            <a href="6_login.html" class="frame__demo">Log out</a>
-            <a href="7_register.html" class="frame__demo">Sign up</a>
-        </div>   
-
-        <div class="search">
-            <form>
-                <input type="text" placeholder="search...">
-                <button type="submit"></button>
-            </form>
-        </div>
+                
+                <div class="collapse navbar-collapse" id="right-nav">
+                    <!--search box--> 
+                    <ul class="navbar-nav ml-auto">
+                        <div class="search">
+                            <form>
+                                <input type="text" placeholder="search...">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <!--login & singup -->
+                        <li class="nav-item"><a href="6_login.html" class="nav-link">Logout</a></li>
+                    </ul>
+                    <!--user icon-->
+                    <a href="2_userinfo.html" class="dropdown-toggle nav-link d-flex align-items-center justify-content-center icon-cart p-0" id="usericon">
+                    <img src="groupproject/avatar.jfif" width="40" height="40" alt="" class="img-thumbnail">
+                    </a>
+                </div>
+            </nav>
+            <!-- END nav -->
+            </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
         
     </div>
 
+    <div class="wrap">
     <div id="user_intro">
         <h2>Chan Da Man's Profiles</h2>
     </div>
@@ -50,177 +78,193 @@
                 Follow Me
             </button>
         </div>
-        <span style="display: inline;">I live in XXX, but love traveling - both in real life and on the page (hence the appearance of some far flung locations in my writing).
+        <span style="display: inline;">
+            <p id="information_text">I live in XXX, but love traveling - both in real life and on the page (hence the appearance of some far flung locations in my writing).
 
             <br/><br/>My latest novel is XXX - set in the film world of the 1950s, along the Italian Riviera.
             
             <br/><br/>My debut novel, XXX, published in early 2015.
             
             <br/><br/>You can find my Facebook page here:<a href="#">www.facebook.com</a>
+            
+            <button name="button" type="button" remote='true'>
+                Edit
+            </button></p>
         </span>
 
 
     </div>
 
-    <div id="my_movies">
-        <h3>
-            My Reviews
-            <a href="#">...more</a>
-        </h3>
+    <div>
+        
+        <div class="division">
+            <div class="division_left"></div>
+            <div class="division_title"><a href="#">My Reviews</a></div>
+            <div class="division_right_mr"></div>
+        </div>
+       
     
-        <ul>
-            <li>
-                <a id="reviews" href="#" title="The Secret History">
-                    <img src='groupproject/book/The Secret History.jpg' height="150" width="110">
-                </a>
-            </li>
-            <li>
-                <a title="You gotta give it to the Byzantines" href="#">
-                You gotta give it to the Byzantines
-                </a>
-            </li>
-            
-            <li>
-                <br>
-                <div>
-                    <span>I read it for a second time because I had absolutely no memory of it. I do, however, vividly remember Robert Graves’s Count Belisarius, which used this text as a source. The avarice and rapacity of Emperor Justinian and his Empress Theodora, a former prostitute, are truly, I think, what Trump would be doing now if he could. Murdering on impulse, forging wills of the deceased that assigns themselves as heirs, paying tribute to the so-called </span>
-                    <a href="#">...more</a></span>
-                </div>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a id="reviews" href="#" title="Ron's gone wrong">
-                <img src='groupproject/Ronsgonewrong.jpg' height="150" width="110">
-                </a>
-            </li>
-            <li>
-                <a title="Ron's Gone Right In Many Ways I Did Not Expect" href="#">
-                Ron's Gone Right In Many Ways I Did Not Expect
-                </a>
-            </li>
-           
-            <li>
-                <br>
-                <div>
-                    <span>Great Pace: Animated movies always fluctuate with balance issues and their gimmicks, often executing well and sometimes tipping one way over the other. Ron's Gone Wrong starts with a good pace that moves to be fun and engaging for younger audiences, but not so much to skip the deeper messages lying in wait. The movie handles transitions between the acts very well, each one having a decent amount of time, sticking </span>
-                    <a href="#">...more</a></span>
-                </div>
-            </li>
-        </ul>
+        <table id="review">
+            <tr>
+                <th>
+                    <a id="reviews" href="#" title="The Secret History">
+                        <img src='groupproject/book/The Secret History.jpg' height="150" width="110">
+                    </a>
+                </th>
+                <td>
+                    
+                    <p>
+                        <a title="You gotta give it to the Byzantines" href="#">
+                        You gotta give it to the Byzantines
+                        </a>
+                        <br>
+                        I read it for a second time because I had absolutely no memory of it. I do, however, vividly remember Robert Graves’s Count Belisarius, which used this text as a source. The avarice and rapacity of Emperor Justinian and his Empress Theodora, a former prostitute, are truly, I think, what Trump would be doing now if he could. 
+                        Murdering on impulse, forging wills of the deceased that assigns themselves as heirs, 
+                        paying tribute to a so-called<a href="#">...more</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <a href="#" title="Ron's gone wrong">
+                        <img src='groupproject/Ronsgonewrong.jpg' height="150" width="110">
+                    </a>
+                </th>
+                <td>
+                    <p>
+                        <a title="Ron's Gone Right In Many Ways I Did Not Expect" href="#">
+                            Ron's Gone Right In Many Ways I Did Not Expect
+                        </a>
+                        <br>
+                        Great Pace: Animated movies always fluctuate with balance issues and their gimmicks, often executing well 
+                        and sometimes tipping one way over the other. Ron's Gone Wrong starts with a good pace that moves to be fun 
+                        and engaging for younger audiences, but not so much to skip the deeper messages lying in wait. 
+                        The movie handles transitions between the acts very well, each one having a decent amount of time, sticking<a href="#">...more</a></p>
+                    
+                </td>
+            </tr>
+        
+    </table>
     </div>
 
     <div id="my_movies"><!--my movies-->
-        <h3>
-            My Movies
-            <a href="#">...more</a>
-        </h3>
-
-        <ul>
-            <li>
+        <div class="division">
+            <div class="division_left"></div>
+            <div class="division_title"><a href="#">My Movies</a></div>
+            <div class="division_right_mm"></div>
+        </div>
+        
+        <table id="mylist">
+            <td>
+                <a href="3_movie.html" title="Spirited Away">
+                <img src="Movie_img/Spirited_Away.jpg" height="175" width="130">
+                </a>
+            </td>
+            <td>
                 <a href="#" title="Ron's gone wrong">
                     <img src='groupproject/Ronsgonewrong.jpg' height="175" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="The Addams Family 2">
-                <img src="groupproject/The Addams Family 2.jpg" height="175" width="130">
+            </td>
+            <td>
+                <a href="#" title="Moana">
+                <img src="groupproject/Moana.jpg" height="175" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="The French Dispatch">
-                <img src="groupproject/The French Dispatch.jpg" height="175" width="130">
+            </td>
+            <td>
+                <a href="#" title="Rick Stein: From Venice to Istanbul">
+                <img src="groupproject/Rick Stein From Venice to Istanbul.jpg" height="175" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="Warning">
-                <img src="groupproject/warning.jpg" height="175" width="130">
+            </td>
+            <td>
+                <a href="#" title="Alien">
+                <img src="groupproject/Alien.jpeg" height="175" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="Mayday">
-                <img src="groupproject/mayday.jpg" height="175" width="130">
-                </a>
-            </li>
-
-        </ul>
-
+            </td>
+        
+        </table>
+        
     </div>
     <div id="my_movies">
-        <h3>
-            My Music
-            <a href="#">...more</a>
-        </h3>
+        <div class="division">
+            <div class="division_left"></div>
+            <div class="division_title"><a href="#">My Music</a></div>
+            <div class="division_right_mm2"></div>
+        </div>
 
-        <ul>
-            <li>
-                <a href="#" title="Armageddon">
-                    <img src='groupproject/music/Armageddon.jpg' height="130" width="130">
+        <table id="mylist">
+            <td>
+                <a href="5_music.html" title="Cats">
+                <img src="Music_img/Cats.jpg" height="130" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="Blood Sugar Sex Magik">
-                <img src="groupproject/music/Blood Sugar Sex Magik.jpg" height="130" width="130">
+            </td>
+            <td>
+                <a href="#" title="天城越え">
+                <img src="groupproject/music/天城越え.jpg" height="130" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="Revolver">
-                <img src="groupproject/music/Revolver.jpg" height="130" width="130">
+            </td>
+            <td>
+                <a href="#" title="How To Train Your Dragon">
+                    <img src='groupproject/music/How To Train Your Dragon.jpg' height="130" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="The Path of The Clouds">
-                <img src="groupproject/music/The Path of The Clouds.jpg" height="130" width="130">
+            </td>
+            <td>
+                <a href="#" title="搭错车">
+                <img src="groupproject/music/搭错车.jpg" height="130" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="Love Season">
-                <img src="groupproject/music/Love Season.jpg" height="130" width="130">
+            </td>
+            <td>
+                <a href="#" title="Anastasia">
+                <img src="groupproject/music/Anastasia.jpg" height="130" width="130">
                 </a>
-            </li>
+            </td>
 
-        </ul>
+        </table>
 
 
     </div>
     <div id="my_movies">
-        <h3>
-            My Books
-            <a href="#">...more</a>
-        </h3>
+        <div class="division">
+            <div class="division_left"></div>
+            <div class="division_title"><a href="#">My Books</a></div>
+            <div class="division_right_mb"></div>
+        </div>
 
-        <ul>
-            <li>
+        <table id="mylist">
+            <td>
+                <a href="4_book.html" title="The Little Prince">
+                <img src="Book_img/Little_Prince.jpg" height="175" width="130">
+                </a>
+            </td>
+            <td>
                 <a href="#" title="The Secret History">
                     <img src='groupproject/book/The Secret History.jpg' height="175" width="130">
                 </a>
-            </li>
-            <li>
+            </td>
+            <td>
                 <a href="#" title="The Guest List">
                 <img src="groupproject/book/The Guest List.jpg" height="175" width="130">
                 </a>
-            </li>
-            <li>
+            </td>
+            <td>
                 <a href="#" title="Age of Empyre (Legends of the First Empire, #6)">
                 <img src="groupproject/book/Age of Empyre.jpg" height="175" width="130">
                 </a>
-            </li>
-            <li>
+            </td>
+            <td>
                 <a href="#" title="The House in the Cerulean Sea">
                 <img src="groupproject/book/The House in the Cerulean Sea.jpg" height="175" width="130">
                 </a>
-            </li>
-            <li>
-                <a href="#" title="The Trouble With Peace (The Age of Madness, #2)">
-                <img src="groupproject/book/The Trouble With Peace.jpg" height="175" width="130">
-                </a>
-            </li>
+            </td>
+            
 
-        </ul>
+        </table>
 
     </div>
+    </div>
+<footer>
+    <div id="bottom"><center>Copyright: The Sith Lord</center></div>
+</footer>
 
-    <div id="bottom"><center>Copyright: the Sith Lord</center></div>
 
 </body>
 </html>
